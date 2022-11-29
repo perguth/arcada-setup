@@ -6,6 +6,7 @@ Make [Arcada](https://github.com/mehanix/arcada) the "floor plan creation softwa
 
 ```
 # Have Docker and Docker Compose installed
+git submodule update --init
 yarn start
 ```
 
