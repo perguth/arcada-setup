@@ -9,4 +9,4 @@ Make [**Arcada**](https://github.com/mehanix/arcada) the ***"floor plan creation
 yarn start
 ```
 
-👉 https://localhost:3000
+👉 http://localhost:3000
