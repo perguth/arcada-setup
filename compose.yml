@@ -1,0 +1,26 @@
+services:
+  db:
+    image: mongo:latest
+    expose:
+      - 27017
+
+  frontend:
+    build: frontend
+    ports:
+      - 127.0.0.1:3000:3000
+    environment:
+      REACT_APP_SERVICE_URI: http://localhost:3001/
+    depends_on:
+      - backend
+
+  backend:
+    build: backend
+    environment:
+      DB_CONNECTION_STRING: mongodb://db/arcade
+      PORT: 3001
+    ports:
+      - 127.0.0.1:3001:3001
+    depends_on:
+      - db
+
+

@@ -7,6 +7,8 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "bash start.sh"
+    "start": "yarn copy-files && docker-compose up",
+    "copy-files": "cp backend.Dockerfile backend/Dockerfile && cp frontend.Dockerfile frontend/Dockerfile",
+    "rebuild": "yarn copy-files && docker-compose build && yarn start"
   }
 }
