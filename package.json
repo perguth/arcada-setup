@@ -1,0 +1,12 @@
+{
+  "name": "arcada-setup",
+  "version": "1.0.0",
+  "description": "Set up and start Arcada (https://github.com/mehanix/arcada)",
+  "repository": "git@github.com:perguth/arcada-setup.git",
+  "author": "Per Guth <mail@perguth.de>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "bash start.sh"
+  }
+}
