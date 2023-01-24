@@ -6,6 +6,8 @@
 
 ```
 # Have Docker and Docker Compose installed
+git clone git@github.com:perguth/arcada-setup.git
+cd arcada-setup
 npm start
 ```
 
